@@ -1,0 +1,22 @@
+{
+  "name": "express-and-view-engines-livedemo",
+  "version": "0.0.1",
+  "description": "Live demo from lesson ExpressJS and View Engines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expressJS",
+    "js",
+    "view",
+    "engines",
+    "expressjs",
+    "lesson",
+    "live",
+    "demo",
+    "livedemo"
+  ],
+  "author": "r3v3nan7",
+  "license": "MIT"
+}
