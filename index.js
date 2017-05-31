@@ -4,9 +4,19 @@ let app = express();
 
 app.use('/public', express.static('./public'));
 
-app.get('/', (req, res) => {
-    res.send('Hello, it\'s me');
+// app.get('/', (req, res) => {
+//     res.send('Hello, it\'s me');
+// });
+
+//Middleware
+app.get('/', (req, res, next) =>{
+    req.user = {username: 'Banana Joe'};
+    next();
+}, (req, res) => {
+    res.send(req.user.username);
+    res.end();
 });
+
 
 app.post('/post', (req, res) => {
     res.send('It\`s posted.');
