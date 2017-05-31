@@ -1,7 +1,9 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const port = 3000;
 let app = express();
 
+app.use(bodyParser.urlencoded({extended: true}));
 app.use('/public', express.static('./public'));
 
 // app.get('/', (req, res) => {
