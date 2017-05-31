@@ -18,6 +18,11 @@ app.get('/', (req, res, next) =>{
 });
 
 
+app.post('/user/login', (req, res) => {
+   console.log(req.body);
+});
+
+
 app.post('/post', (req, res) => {
     res.send('It\`s posted.');
 });
