@@ -2,7 +2,7 @@ const express = require('express');
 const port = 3000;
 let app = express();
 
-app.use(express.static('./public'));
+app.use('/public', express.static('./public'));
 
 app.get('/', (req, res) => {
     res.send('Hello, it\'s me');
