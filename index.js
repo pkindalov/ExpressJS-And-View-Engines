@@ -10,7 +10,10 @@ app.set('views', 'public/views');
 app.use('/public', express.static('./public'));
 
 app.get('/', (req, res) => {
-    res.render('test', {title: 'Title from backend'});
+    res.render('test', {
+                                        title: 'Title from backend',
+                                        myArray: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                         });
 });
 
 
