@@ -4,6 +4,8 @@ const port = 3000;
 let app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.set('view engine', 'pug')
+
 app.use('/public', express.static('./public'));
 
 // app.get('/', (req, res) => {
